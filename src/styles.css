@@ -1,0 +1,81 @@
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --border-class: 1px solid rgba(0, 0, 0, 0.1);
+    --primary-color: #1976D2;
+    --color-white: white;
+}
+
+.layout-app-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+}
+
+.member-scene-container,
+.rick-and-morty-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1.5em;
+}
+
+.member-list,
+.rick-and-morty-list {
+    margin-top: 5px;
+    border-radius: 5px;
+    border: var(--border-class);
+}
+
+.list-header {
+    display: grid;
+    width: 100%;
+    padding: 6px;
+    border-radius: 5px 5px 0px 0px;
+    background-color: var(--primary-color);
+    color: var(--color-white);
+}
+
+.default-row {
+    display: grid;
+    grid-template-rows: minmax(35px, auto);
+    padding: 6px;
+    border-bottom: var(--border-class);
+}
+
+.member-row {
+    grid-template-columns: 100px 1fr 80px;
+}
+
+.rick-and-morty-row {
+    grid-template-columns: 1fr 80px;
+}
+
+.default-row-text {
+    padding: 18px 2px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.clickable-item {
+    cursor: pointer;
+}
+
+.pagination-structure {
+    display: flex;
+    justify-content: center;
+    padding: 10px 3px;
+}
+
+.form-members {
+    display: flex;
+    gap: 0.5em;
+}
+
+h3 {
+    padding: 0 0 1em 0;
+}
